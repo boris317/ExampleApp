@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import sys, os
 
-version = '0.1'
+version = '0.2'
 
 setup(name='ExampleApp',
       version=version,
@@ -17,6 +17,7 @@ setup(name='ExampleApp',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
+      scripts=["foo.py"],
       install_requires=[
           "flask",
           "sqlalchemy",
